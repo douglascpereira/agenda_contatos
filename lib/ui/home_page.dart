@@ -87,24 +87,26 @@ class _HomePageState extends State<HomePage> {
                   )
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(left: 10.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(contacts[index].name ?? "",
-                     style: TextStyle(fontSize: 22.0,
-                         fontWeight: FontWeight.bold),
-                    ),
-                    Text(contacts[index].email ?? "",
-                      style: TextStyle(fontSize: 18.0),
-                    ),
-                    Text(contacts[index].phone ?? "",
-                      style: TextStyle(fontSize: 18.0),
-                    ),
-                  ],
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.only(left: 10.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(contacts[index].name ?? "",
+                        style: TextStyle(fontSize: 22.0,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Text(contacts[index].email ?? "",
+                        style: TextStyle(fontSize: 18.0),
+                      ),
+                      Text(contacts[index].phone ?? "",
+                        style: TextStyle(fontSize: 18.0),
+                      ),
+                    ],
+                  ),
                 ),
-              )
+              ),
             ],
           ),
         ),
